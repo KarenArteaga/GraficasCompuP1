@@ -1,0 +1,17 @@
+﻿  main.cpp
+C:\Users\manoh\Documents\computerGraphicsProjects\project1\AdvancedProjectComputerGraphics\src\main.cpp(90,36): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\manoh\Documents\computerGraphicsProjects\project1\AdvancedProjectComputerGraphics\src\main.cpp(93,119): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\manoh\Documents\computerGraphicsProjects\project1\AdvancedProjectComputerGraphics\src\main.cpp(94,119): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\manoh\Documents\computerGraphicsProjects\project1\AdvancedProjectComputerGraphics\src\main.cpp(98,117): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\manoh\Documents\computerGraphicsProjects\project1\AdvancedProjectComputerGraphics\src\main.cpp(99,117): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\manoh\Documents\computerGraphicsProjects\project1\AdvancedProjectComputerGraphics\src\main.cpp(104,47): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\manoh\Documents\computerGraphicsProjects\project1\AdvancedProjectComputerGraphics\src\main.cpp(107,48): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\manoh\Documents\computerGraphicsProjects\project1\AdvancedProjectComputerGraphics\src\main.cpp(108,54): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\manoh\Documents\computerGraphicsProjects\project1\AdvancedProjectComputerGraphics\src\main.cpp(147,31): warning C4244: '=': conversion from 'time_t' to 'int', possible loss of data
+C:\Users\manoh\Documents\computerGraphicsProjects\project1\AdvancedProjectComputerGraphics\src\main.cpp(155,46): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\manoh\Documents\computerGraphicsProjects\project1\AdvancedProjectComputerGraphics\src\main.cpp(157,45): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\manoh\Documents\computerGraphicsProjects\project1\AdvancedProjectComputerGraphics\src\main.cpp(165,52): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\manoh\Documents\computerGraphicsProjects\project1\AdvancedProjectComputerGraphics\src\main.cpp(168,51): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  renderer.cpp
+  Generating Code...
+  AdvancedProjectComputerGraphics.vcxproj -> C:\Users\manoh\Documents\computerGraphicsProjects\project1\bin\Debug-windows-x86_64\AdvancedProjectComputerGraphics\AdvancedProjectComputerGraphics.exe
