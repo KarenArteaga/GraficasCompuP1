@@ -126,24 +126,24 @@ int main(void) {
 
 	std::vector<float> fondo = {
 		// position                        // color
-		25.0f, 950.0f, 0.09f, 1.0f,        0.9569f, 0.9412f, 0.8980f, 1.0f,   // top left
-		25.0f, 25.0f, 0.09f, 1.0f,         0.9569f, 0.9412f, 0.8980f, 1.0f,   // bottom left
+		25.0f, 	950.0f, 0.09f, 1.0f,       0.9569f, 0.9412f, 0.8980f, 1.0f,   // top left
+		25.0f, 	25.0f, 	0.09f, 1.0f,       0.9569f, 0.9412f, 0.8980f, 1.0f,   // bottom left
 		675.0f, 950.0f, 0.09f, 1.0f,       0.9569f, 0.9412f, 0.8980f, 1.0f,   // top right
 
-		675.0f, 950.0f, 0.09f, 1.0f,       0.9569f, 0.9412f, 0.8980f, 1.0f,   // top right
-		675.0f, 25.0f, 0.09f, 1.0f,        0.9569f, 0.9412f, 0.8980f, 1.0f,   // bottom right
-		25.0f, 25.0f, 0.09f, 1.0f,         0.9569f, 0.9412f, 0.8980f, 1.0f,   // bottom left
+		675.0f, 950.0f, 0.09f, 1.0f,       	0.9569f, 0.9412f, 0.8980f, 1.0f,   // top right
+		675.0f, 25.0f, 	0.09f, 1.0f,        0.9569f, 0.9412f, 0.8980f, 1.0f,   // bottom right
+		25.0f, 	25.0f, 	0.09f, 1.0f,        0.9569f, 0.9412f, 0.8980f, 1.0f,   // bottom left
 	};
 
 	std::vector<float> techo = {
 		// position                       // color
-		0.0f, 975.0f, 0.14f, 1.0f,        0.1f, 0.1f, 0.1f, 1.0f,   // top left
-		0.0f, 950.0f, 0.14f, 1.0f,        0.1f, 0.1f, 0.1f, 1.0f,   // bottom left
-		700.0f, 975.0f, 0.14f, 1.0f,      0.1f, 0.1f, 0.1f, 1.0f,   // top right
+		0.0f, 	975.0f, 0.14f, 1.0f,        0.1f, 0.1f, 0.1f, 1.0f,   // top left
+		0.0f, 	950.0f, 0.14f, 1.0f,        0.1f, 0.1f, 0.1f, 1.0f,   // bottom left
+		700.0f, 975.0f, 0.14f, 1.0f,      	0.1f, 0.1f, 0.1f, 1.0f,   // top right
 
-		700.0f, 975.0f, 0.14f, 1.0f,      0.1f, 0.1f, 0.1f, 1.0f,   // top right
-		700.0f, 950.0f, 0.14f, 1.0f,      0.1f, 0.1f, 0.1f, 1.0f,   // bottom right
-		0.0f, 950.0f, 0.14f, 1.0f,        0.1f, 0.1f, 0.1f, 1.0f,   // bottom left
+		700.0f, 975.0f, 0.14f, 1.0f,      	0.1f, 0.1f, 0.1f, 1.0f,   // top right
+		700.0f, 950.0f, 0.14f, 1.0f,      	0.1f, 0.1f, 0.1f, 1.0f,   // bottom right
+		0.0f, 	950.0f, 0.14f, 1.0f,        0.1f, 0.1f, 0.1f, 1.0f,   // bottom left
 	};
 
 	unsigned int indices[] = {
@@ -181,83 +181,83 @@ int main(void) {
 	std::vector<float> leftTower;
 	// blue supports
 	figure rect1(75.0f, 1100.0f);
-	renderer.drawEllipse(100.0f, 1100.0f, 25.0, 25.0, 0.15f, leftTower, 0.549, 0.620, 0.604, 0.0f, 3.14159);
-	renderer.insertRectangle(rect1.refX, rect1.refY, 97.0f, 50.0, leftTower, 0.549, 0.620, 0.604, 0.15f);
-	renderer.drawEllipse(180.0f, 1100.0f, 25.0, 25.0, 0.15f, leftTower, 0.549, 0.620, 0.604, 0.0f, 3.14159);
-	renderer.insertRectangle(155.0f, 1100.0f, 97.0f, 50.0, leftTower, 0.549, 0.620, 0.604, 0.15f);
+	renderer.drawEllipse(100.0f, 1100.0f, 25.0f, 25.0f, 0.15f, leftTower, 0.549f, 0.620f, 0.604f, 0.0f, 3.14159);
+	renderer.insertRectangle(rect1.refX, rect1.refY, 97.0f, 50.0f, leftTower, 0.549f, 0.620f, 0.604f, 0.15f);
+	renderer.drawEllipse(180.0f, 1100.0f, 25.0f, 25.0f, 0.15f, leftTower, 0.549f, 0.620f, 0.604f, 0.0f, 3.14159);
+	renderer.insertRectangle(155.0f, 1100.0f, 97.0f, 50.0f, leftTower, 0.549f, 0.620f, 0.604f, 0.15f);
 	// orange supports
-	renderer.drawEllipse(100.0, 1145.0, 20.0, 20.0, 0.15f, leftTower, 0.859, 0.455, 0.298, 3.14159, 2 * 3.14159);
-	renderer.insertRectangle(80.0f, 1220.0, 75.0f, 40.0f, leftTower, 0.859, 0.455, 0.298, 0.15f);
-	renderer.drawEllipse(180.0, 1145.0, 20.0, 20.0, 0.15f, leftTower, 0.859, 0.455, 0.298, 3.14159, 2 * 3.14159);
-	renderer.insertRectangle(160.0f, 1220.0, 75.0f, 40.0f, leftTower, 0.859, 0.455, 0.298, 0.15f);
+	renderer.drawEllipse(100.0f, 1145.0f, 20.0f, 20.0f, 0.15f, leftTower, 0.859f, 0.455f, 0.298f, 3.14159, 2 * 3.14159);
+	renderer.insertRectangle(80.0f, 1220.0, 75.0f, 40.0f, leftTower, 0.859f, 0.455f, 0.298f, 0.15f);
+	renderer.drawEllipse(180.0f, 1145.0f, 20.0f, 20.0f, 0.15f, leftTower, 0.859f, 0.455f, 0.298f, 3.14159, 2 * 3.14159);
+	renderer.insertRectangle(160.0f, 1220.0f, 75.0f, 40.0f, leftTower, 0.859f, 0.455f, 0.298f, 0.15f);
 	// pot rectangle
-	renderer.insertRectangle(50.0, 1240.0, 20.0, 210.0, leftTower, 0.718, 0.235, 0.216, 0.15f);
+	renderer.insertRectangle(50.0f, 1240.0f, 20.0f, 210.0f, leftTower, 0.718f, 0.235f, 0.216f, 0.15f);
 	// pot
-	renderer.insertRectangle(125.0, 1315.0, 75.0, 50, leftTower, 0.608, 0.388, 0.208, 0.15);
+	renderer.insertRectangle(125.0f, 1315.0f, 75.0f, 50, leftTower, 0.608f, 0.388f, 0.208f, 0.15f);
 
 	std::vector<float> middleTower;
-	figure middleBase(252.0, 1200.0); // 385.0  1200
-	renderer.drawEllipse(middleBase.refX, middleBase.refY, 232.5, 140.5, 0.16, middleTower, 0.867, 0.247, 0.275, 1.55 * 3.14159, 2 * 3.14159);
-	renderer.drawEllipse(385.0, 1305.0, 75.0, 105.0, 0.16, middleTower, 0.859, 0.455, 0.298, 3.09, 1.98 * 3.14159);
-	renderer.drawEllipse(385.0, 1325.0, 72.0, 90.0, 0.15, middleTower, 0.4, 0.533, 0.549, 3.0, 1.95 * 3.14159);
-	renderer.drawEllipse(385.0, 1355.0, 60.0, 70.0, 0.14, middleTower, 0.608, 0.388, 0.208, 3.14159, 2 * 3.14159);
-	renderer.drawEllipse(385.0, 1392.5, 37.5, 37.5, 0.16, middleTower, 0.867, 0.247, 0.275, 0.0, 2 * 3.14159);
-	renderer.drawEllipse(415.0, 1474.0, 55.0, 50.0, 0.16, middleTower, 0.914, 0.486, 0.176, 0.5 * 3.14159, 1.5 * 3.14159);
-	renderer.drawEllipse(410.0, 1573.0, 55.0, 50.0, 0.16, middleTower, 0.9725f, 0.8509f, 0.7255f, 0.0, 0.5 * 3.14159);
-	renderer.drawEllipse(410.0, 1573.0, 55.0, 50.0, 0.16, middleTower, 0.9725f, 0.8509f, 0.7255f, 1.5 * 3.14159, 2 * 3.14159);
+	figure middleBase(252.0f, 1200.0f); // 385.0  1200
+	renderer.drawEllipse(middleBase.refX, middleBase.refY, 232.5f, 140.5f, 0.16f, middleTower, 0.867f, 0.247f, 0.275f, 1.55 * 3.14159, 2 * 3.14159);
+	renderer.drawEllipse(385.0f, 1305.0f, 75.0f, 105.0f, 0.16f, middleTower, 0.859f, 0.455f, 0.298f, 3.09f, 1.98 * 3.14159);
+	renderer.drawEllipse(385.0f, 1325.0f, 72.0f, 90.0f, 0.15f, middleTower, 0.4f, 0.533f, 0.549f, 3.0f, 1.95 * 3.14159);
+	renderer.drawEllipse(385.0f, 1355.0f, 60.0f, 70.0f, 0.14f, middleTower, 0.608f, 0.388f, 0.208f, 3.14159, 2 * 3.14159);
+	renderer.drawEllipse(385.0f, 1392.5f, 37.5f, 37.5f, 0.16f, middleTower, 0.867f, 0.247f, 0.275f, 0.0f, 2 * 3.14159);
+	renderer.drawEllipse(415.0f, 1474.0f, 55.0f, 50.0f, 0.16f, middleTower, 0.914f, 0.486f, 0.176f, 0.5 * 3.14159, 1.5 * 3.14159);
+	renderer.drawEllipse(410.0f, 1573.0f, 55.0f, 50.0f, 0.16f, middleTower, 0.9725f, 0.8509f, 0.7255f, 0.0f, 0.5 * 3.14159);
+	renderer.drawEllipse(410.0f, 1573.0f, 55.0f, 50.0f, 0.16f, middleTower, 0.9725f, 0.8509f, 0.7255f, 1.5 * 3.14159, 2 * 3.14159);
 
 	std::vector<float> leftBase2;
-	figure leftEllipse(850.0, 210.0);
-	renderer.drawEllipse(leftEllipse.refX, leftEllipse.refY, 75.0, 150.0, 0.16, leftBase2, 0.0, 0.0, 0.0, 0.5 * 3.14159, 3.14159);
-	renderer.insertRectangle(850.0, 360.0, 150.0, 125.0, leftBase2, 0.0, 0.0, 0.0, 0.16);
-	renderer.drawEllipse(975.0, 210.0, 60.0, 150.0, 0.16, leftBase2, 0.0, 0.0, 0.0, 0, 0.5 * 3.14159);
-	renderer.drawEllipse(905.5, 210.0, 60.0, 60.0, 0.17, leftBase2, 0.9098f, 0.5490f, 0.2706f, 0, 2 * 3.14159);
+	figure leftEllipse(850.0f, 210.0f);
+	renderer.drawEllipse(leftEllipse.refX, leftEllipse.refY, 75.0f, 150.0f, 0.16f, leftBase2, 0.0f, 0.0f, 0.0f, 0.5 * 3.14159, 3.14159);
+	renderer.insertRectangle(850.0f, 360.0f, 150.0f, 125.0f, leftBase2, 0.0f, 0.0f, 0.0f, 0.16f);
+	renderer.drawEllipse(975.0f, 210.0f, 60.0f, 150.0f, 0.16f, leftBase2, 0.0f, 0.0f, 0.0f, 0, 0.5 * 3.14159);
+	renderer.drawEllipse(905.5f, 210.0f, 60.0f, 60.0f, 0.17f, leftBase2, 0.9098f, 0.5490f, 0.2706f, 0, 2 * 3.14159);
 
 	std::vector<float> rightTower;
-	figure rightBase(525.0, 1200.0);
-	renderer.drawEllipse(rightBase.refX, rightBase.refY, 75.0, 75.0, 0.18, rightTower, 0.718, 0.235, 0.216, 0, 2 * 3.14159);
-	renderer.insertRectangle(425.0, 1307.0, 32.0, 200.0, rightTower, 0.227, 0.482, 0.439, 0.18);
-	renderer.drawEllipse(525.0, 1357.0, 100.0, 50.0, 0.18, rightTower, 0.898, 0.749, 0.196, 3.14159, 2 * 3.14159);
-	renderer.drawEllipse(525.0, 1377.0, 100.0, 50.0, 0.19, rightTower, 0.780, 0.560, 0.253, 3.14159, 2 * 3.14159);
-	renderer.drawEllipse(525.0, 1397.0, 100.0, 50.0, 0.20, rightTower, 0.227, 0.482, 0.439, 3.14159, 2 * 3.14159);
+	figure rightBase(525.0f, 1200.0f);
+	renderer.drawEllipse(rightBase.refX, rightBase.refY, 75.0f, 75.0f, 0.18f, rightTower, 0.718f, 0.235f, 0.216f, 0, 2 * 3.14159);
+	renderer.insertRectangle(425.0f, 1307.0f, 32.0f, 200.0f, rightTower, 0.227f, 0.482f, 0.439f, 0.18f);
+	renderer.drawEllipse(525.0f, 1357.0f, 100.0f, 50.0f, 0.18f, rightTower, 0.898f, 0.749f, 0.196f, 3.14159, 2 * 3.14159);
+	renderer.drawEllipse(525.0f, 1377.0f, 100.0f, 50.0f, 0.19f, rightTower, 0.780f, 0.560f, 0.253f, 3.14159, 2 * 3.14159);
+	renderer.drawEllipse(525.0f, 1397.0f, 100.0f, 50.0f, 0.20f, rightTower, 0.227f, 0.482f, 0.439f, 3.14159, 2 * 3.14159);
 	// block last ellipse // 642
-	renderer.drawEllipse(475.0, 1407.0, 40.0f, 35.0f, 0.21f, rightTower, 0.9569f, 0.9412f, 0.8980f, 3.14159f, 3.14159 * 1.5);
-	renderer.insertRectangle(475.0, 1412.0, 40.0, 40.0, rightTower, 0.8941f, 0.5804f, 0.3137f, 0.21);
-	renderer.drawEllipse(475.0, 1400.0, 135.0f, 30.0f, 0.21f, rightTower, 0.8941f, 0.5804f, 0.3137f, 1.5 * 3.14159f, 3.14159 * 2);
-	renderer.drawEllipse(525.0, 1400.0, 78.0f, 30.0f, 0.21f, rightTower, 0.8941f, 0.5804f, 0.3137f, 1.5 * 3.14159f, 3.14159 * 2);
+	renderer.drawEllipse(475.0f, 1407.0f, 40.0f, 35.0f, 0.21f, rightTower, 0.9569f, 0.9412f, 0.8980f, 3.14159f, 3.14159 * 1.5);
+	renderer.insertRectangle(475.0f, 1412.0f, 40.0f, 40.0f, rightTower, 0.8941f, 0.5804f, 0.3137f, 0.21f);
+	renderer.drawEllipse(475.0f, 1400.0f, 135.0f, 30.0f, 0.21f, rightTower, 0.8941f, 0.5804f, 0.3137f, 1.5 * 3.14159f, 3.14159 * 2);
+	renderer.drawEllipse(525.0f, 1400.0f, 78.0f, 30.0f, 0.21f, rightTower, 0.8941f, 0.5804f, 0.3137f, 1.5 * 3.14159f, 3.14159 * 2);
 
-	renderer.drawEllipse(525.0, 1412.0, 45.0, 45.0, 0.22, rightTower, 0.867, 0.247, 0.275, 0.0, 2 * 3.14159);
-	renderer.drawEllipse(525.0, 1432.0, 130.0, 130.0, 0.22, rightTower, 0.4, 0.533, 0.549, 0.0, 3.14159);
-	renderer.drawEllipse(525.0, 1612.0, 50.0, 50.0, 0.22, rightTower, 0.9725f, 0.8509f, 0.7255f, 3.14159, 2 * 3.14159);
-	renderer.drawEllipse(525.0, 1637.0, 25.0, 25.0, 0.22, rightTower, 0.835, 0.525, 0.282, 0, 2 * 3.14159);
+	renderer.drawEllipse(525.0f, 1412.0f, 45.0f, 45.0f, 0.22f, rightTower, 0.867f, 0.247f, 0.275f, 0.0f, 2 * 3.14159);
+	renderer.drawEllipse(525.0f, 1432.0f, 130.0f, 130.0f, 0.22f, rightTower, 0.4f, 0.533f, 0.549f, 0.0f, 3.14159);
+	renderer.drawEllipse(525.0f, 1612.0f, 50.0f, 50.0f, 0.22f, rightTower, 0.9725f, 0.8509f, 0.7255f, 3.14159, 2 * 3.14159);
+	renderer.drawEllipse(525.0f, 1637.0f, 25.0f, 25.0f, 0.22f, rightTower, 0.835f, 0.525f, 0.282f, 0, 2 * 3.14159);
 
 	std::vector<float> drops;
 	int dropCount = 90;
-	float height = 3250.0;
-	float xpos = 140.0;
+	float height = 3250.0f;
+	float xpos = 140.0f;
 	for (int i = 0; i < dropCount; i++)
 	{
-		renderer.drawEllipse(xpos, height, 10.0, 10.0, 0.23, drops, 0.529, 0.808, 0.922, 0, 2 * 3.14159);
+		renderer.drawEllipse(xpos, height, 10.0f, 10.0f, 0.23f, drops, 0.529f, 0.808f, 0.922f, 0, 2 * 3.14159);
 		height -= 25.0;
 		if (i % 2 == 0)
 		{
-			xpos += 25.0;
+			xpos += 25.0f;
 		}
 		else
 		{
-			xpos -= 25.0;
+			xpos -= 25.0f;
 		}
 	}
 
 	std::vector<float> windowBlack = {
 		// posicion                               // color
-		0.0f, 975.0f, 0.24f, 1.0f,        0.1f, 0.1f, 0.1f, 0.7f,   // top left
-		0.0f, 0.0f, 0.24f, 1.0f,         0.1f, 0.1f, 0.1f, 0.7f,   // bottom left
+		0.0f, 	975.0f, 0.24f, 1.0f,       0.1f, 0.1f, 0.1f, 0.7f,   // top left
+		0.0f, 	0.0f, 	0.24f, 1.0f,       0.1f, 0.1f, 0.1f, 0.7f,   // bottom left
 		700.0f, 975.0f, 0.24f, 1.0f,       0.1f, 0.1f, 0.1f, 0.7f,   // top right
 
 		700.0f, 975.0f, 0.24f, 1.0f,       0.1f, 0.1f, 0.1f, 0.7f,   // top right
-		700.0f, 0.0f, 0.24f, 1.0f,        0.1f, 0.1f, 0.1f, 0.7f,    // bottom right
-		0.0f, 0.0f, 0.24f, 1.0f,         0.1f, 0.1f, 0.1f, 0.7f,   // bottom left
+		700.0f, 0.0f, 	0.24f, 1.0f,       0.1f, 0.1f, 0.1f, 0.7f,    // bottom right
+		0.0f, 	0.0f, 	0.24f, 1.0f,       0.1f, 0.1f, 0.1f, 0.7f,   // bottom left
 	};
 
 	VertexArray va1, va2, va3, va4, va5, va6, va7, va8, va9, va10, va11;
@@ -325,16 +325,16 @@ int main(void) {
 	texture1.bind(0);
 
 	std::vector<float> plant = {
-		// pos                      // color          // texture
-		-0.7143, 0.3308, -0.14, 1.0,    0.0, 0.0, 0.0,    0.0, 1.0,
-		-0.7143, -0.12, -0.14, 1.0,    0.0, 0.0, 0.0,    0.0, 0.0,
-		-0.40, 0.3308, -0.14, 1.0,    0.0, 0.0, 0.0,    1.0, 1.0,
+		// posición                     	// color          		// texture
+		-0.7143f, 0.3308f, 	-0.14f, 1.0f,    0.0f, 0.0f, 0.0f,    0.0f, 1.0f,
+		-0.7143f, -0.12f, 	-0.14f, 1.0f,    0.0f, 0.0f, 0.0f,    0.0f, 0.0f,
+		-0.40f,   0.3308f, 	-0.14f, 1.0f,    0.0f, 0.0f, 0.0f,    1.0f, 1.0f,
 
-		-0.40, 0.3308, -0.14, 1.0,    0.0, 0.0, 0.0,    1.0, 1.0,
-		-0.40, -0.12, -0.14, 1.0,    0.0, 0.0, 0.0,    1.0, 0.0,
-		-0.7143, -0.12, -0.14, 1.0,    0.0, 0.0, 0.0,    0.0, 0.0
+		-0.40f,   0.3308f, 	-0.14f, 1.0f,    0.0f, 0.0f, 0.0f,    1.0f, 1.0f,
+		-0.40f,   -0.12f, 	-0.14f, 1.0f,    0.0f, 0.0f, 0.0f,    1.0f, 0.0f,
+		-0.7143f, -0.12f, 	-0.14f, 1.0f,    0.0f, 0.0f, 0.0f,    0.0f, 0.0f
 	};
-	std::vector<float> centroid = { 0.55715, -0.2108 };
+	std::vector<float> centroid = { 0.55715f, -0.2108f };
 
 	VertexArray vaPlant;
 	VertexBufferLayout layoutPlant;
@@ -371,8 +371,8 @@ int main(void) {
 
 	float seconds_call = 0.0f, jumpTime = 0.0f, seconds_call2 = 0.0f, seconds_call3 = 0.0f, seconds_call4 = 0.0f;
 	bool signChange = false;
-	float rotateDegree = 0.0;
-	int offsetDrops = 0.0;
+	float rotateDegree = 0.0f;
+	int offsetDrops = 0.0f;
 
 	while( !glfwWindowShouldClose( window ) ) {
 		glfwGetFramebufferSize( window, &SCR_WIDTH, &SCR_HEIGHT );
@@ -389,14 +389,14 @@ int main(void) {
 
 		mainShader.SetuniformsMat4f("u_Projection", projection);
 		mainShader.SetuniformsMat4f("u_Transformation", transform1);
-		mainShader.setUniform1f("brightness", 1.0);
+		mainShader.setUniform1f("brightness", 1.0f);
 
 		renderer.draw(va1, mainShader, fondo.size(), 0);
 
 		passed_seconds = time(NULL) - seconds;
 
 		mainShader.SetuniformsMat4f("u_Transformation", transform2);
-		if (back1.refX < 25.0)
+		if (back1.refX < 25.0f)
 		{
 			transform2 = glm::translate(transform2, glm::vec3(5.0f, 0.0f, 0.0f));
 			back1.refX += 5.0f;
@@ -413,7 +413,7 @@ int main(void) {
 				seconds_call = 0.0f;
 				signChange = false;
 			}
-			seconds_call += 0.1;
+			seconds_call += 0.1f;
 			std::vector vels = getVelComponentsFreeFall(base1.refX, base1.refY, base1.velX, base1.velY, seconds_call, signChange, 200.0f);			
 			base1.updateValues(vels[0], vels[1]);
 
@@ -432,7 +432,7 @@ int main(void) {
 					jumpTime = 0.0f;
 					signChange = false;
 				}
-				jumpTime += 0.1;
+				jumpTime += 0.1f;
 				if (mCir1.refX >= 435.f)
 				{
 					mCir1.velX = 0.0f;
@@ -450,7 +450,7 @@ int main(void) {
 					jumpTime = 0.0f;
 					signChange = false;
 				}
-				jumpTime += 0.1;
+				jumpTime += 0.1f;
 				if (mCir2.refX <= 180.0f)
 				{
 					mCir2.velX = 0.0f;
@@ -482,7 +482,7 @@ int main(void) {
 				seconds_call2 = 0.0f;
 				signChange = false;
 			}
-			seconds_call2 += 0.1;
+			seconds_call2 += 0.1f;
 			std::vector vels = getVelComponentsFreeFall(rect1.refX, rect1.refY, rect1.velX, rect1.velY, seconds_call2, signChange, 379.75f);
 			rect1.updateValues(vels[0], vels[1]);
 
@@ -509,7 +509,7 @@ int main(void) {
 				seconds_call3 = 0.0f;
 				signChange = false;
 			}
-			seconds_call3 += 0.1;
+			seconds_call3 += 0.1f;
 			std::vector vels = getVelComponentsFreeFall(middleBase.refX, middleBase.refY, middleBase.velX, middleBase.velY, seconds_call3, signChange, 375.0f);
 			middleBase.updateValues(vels[0], vels[1]);
 
@@ -528,16 +528,16 @@ int main(void) {
 				leftEllipse.refX -= 5.0f;
 				renderer.draw(va8, mainShader, leftBase2.size(), 0);
 			}
-			else if (rotateDegree <= 2.26)
+			else if (rotateDegree <= 2.26f)
 			{
 				mainShader.SetuniformsMat4f("u_Transformation", transform7);
-				transform7 = glm::rotate(transform7, (float)glm::radians(0.01), glm::vec3(0.0f, 0.0f, 1.0f));
+				transform7 = glm::rotate(transform7, (float)glm::radians(0.01f), glm::vec3(0.0f, 0.0f, 1.0f));
 				renderer.draw(va7, mainShader, middleTower.size(), 0);
 				mainShader.SetuniformsMat4f("u_Transformation", transform8);
 				transform8 = glm::translate(transform8, glm::vec3(-0.23f, 0.0f, 0.0f));
 				leftEllipse.refX -= 5.0f;
 				renderer.draw(va8, mainShader, leftBase2.size(), 0);
-				rotateDegree += 0.01;
+				rotateDegree += 0.01f;
 			}
 		}
 
@@ -563,7 +563,7 @@ int main(void) {
 				seconds_call4 = 0.0f;
 				signChange = false;
 			}
-			seconds_call4 += 0.1;
+			seconds_call4 += 0.1f;
 			std::vector vels = getVelComponentsFreeFall(rightBase.refX, rightBase.refY, rightBase.velX, rightBase.velY, seconds_call4, signChange, 435.0f);
 			rightBase.updateValues(vels[0], vels[1]);
 
@@ -584,17 +584,17 @@ int main(void) {
 			mainShader.SetuniformsMat4f("u_Transformation", transform1);
 			mainShader.setUniform1f("brightness", brightness);
 			renderer.draw(va11, mainShader, windowBlack.size(), 0);
-			mainShader.setUniform1f("brightness", 1.0);
+			mainShader.setUniform1f("brightness", 1.0f);
 		}
 
 		shaderText.SetuniformsMat4f("u_Transformation", transformP); 
 		if (passed_seconds % totalAnimationTime >= 49 && passed_seconds % totalAnimationTime < 54)
 		{
 			toCenter = glm::translate(glm::mat4(1.0f), glm::vec3(centroid[0], centroid[1], 0.0f));
-			Scale = glm::scale(glm::mat4(1.0f), glm::vec3(scale, scale, 1.0));
+			Scale = glm::scale(glm::mat4(1.0f), glm::vec3(scale, scale, 1.0f));
 			toPos = glm::translate(glm::mat4(1.0f), -glm::vec3(centroid[0], centroid[1], 0.0f));
 			transformP = toPos * Scale * toCenter;
-			scale += 0.0020;
+			scale += 0.0020f;
 			transformP = glm::translate(transformP, glm::vec3(0.0f, scale * 0.43, 0.0f));
 			renderer.draw(vaPlant, shaderText, plant.size(), 0);
 		}
@@ -622,33 +622,33 @@ int main(void) {
 
 			seconds_call = 0.0f, jumpTime = 0.0f, seconds_call2 = 0.0f, seconds_call3 = 0.0f, seconds_call4 = 0.0f;
 			signChange = false;
-			rotateDegree = 0.0;
+			rotateDegree = 0.0f;
 			scale = 0.1f;
-			offsetDrops = 0.0;
+			offsetDrops = 0.0f;
 
-			centroid = { 0.55715, -0.2108 };
+			centroid = { 0.55715f, -0.2108f };
 			toCenter = glm::translate(glm::mat4(1.0f), glm::vec3(centroid[0], centroid[1], 0.0f));
-			Scale = glm::scale(glm::mat4(1.0f), glm::vec3(scale, scale, 1.0));
+			Scale = glm::scale(glm::mat4(1.0f), glm::vec3(scale, scale, 1.0f));
 			toPos = glm::translate(glm::mat4(1.0f), -glm::vec3(centroid[0], centroid[1], 0.0f));
 			transformP = toPos * Scale * toCenter;
 
-			back1.refX = -500.0; back1.refY = 70.0;
-			base1.refX = 487.5; base1.refY = 1200.0;
+			back1.refX = -500.0f; back1.refY = 70.0f;
+			base1.refX = 487.5f; base1.refY = 1200.0f;
 
-			mCir1.refX = 100.0; mCir1.refY = -20.0;
-			mCir1.updateVels(3.0, 30.0);
-			mCir1.refX = 180.0; mCir2.refY = -20.0;
-			mCir2.updateVels(-3.0, 25.0);
+			mCir1.refX = 100.0f; mCir1.refY = -20.0f;
+			mCir1.updateVels(3.0f, 30.0f);
+			mCir1.refX = 180.0f; mCir2.refY = -20.0f;
+			mCir2.updateVels(-3.0f, 25.0f);
 
-			rect1.refX = 75.0; rect1.refY = 1100.0;
-			rect1.updateVels(0.0, 0.0);
+			rect1.refX = 75.0f; rect1.refY = 1100.0f;
+			rect1.updateVels(0.0f, 0.0f);
 
-			middleBase.refX = 252.0; middleBase.refY = 1200.0;
-			leftEllipse.refX = 850.0; leftEllipse.refY = 210.0;
-			rightBase.refX = 525.0; rightBase.refY = 1200.0;
+			middleBase.refX = 252.0f; middleBase.refY = 1200.0f;
+			leftEllipse.refX = 850.0f; leftEllipse.refY = 210.0f;
+			rightBase.refX = 525.0f; rightBase.refY = 1200.0f;
 
-			float height = 1750.0;
-			float xpos = 140.0;
+			float height = 1750.0f;
+			float xpos = 140.0f;
 		}
 
 		std::cout << passed_seconds << std::endl;
